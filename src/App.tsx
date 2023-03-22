@@ -1,11 +1,10 @@
 import React from 'react';
 import {View} from 'react-native';
-import {ThemeProvider} from 'styled-components/native';
-import theme from './styles/theme';
+import {ThemeProvider} from './theme/Provider';
 
 const App: React.FC = () => {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider>
       <View />
     </ThemeProvider>
   );

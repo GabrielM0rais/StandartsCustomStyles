@@ -1,4 +1,6 @@
-export default {
+import {DefaultTheme as DefaultThemeProps} from 'styled-components';
+
+const DefaultConfigs = {
   colors: {
     neutrals: {
       neutral_black_lgt: 'rgb(0, 0, 0)',
@@ -26,10 +28,18 @@ export default {
     },
   },
   typography: {
+    weight: {
+      light: 'Poppins-Light',
+      regular: 'Poppins-Regular',
+      medium: 'Poppins-Medium',
+      semiBold: 'Poppins-SemiBold',
+      bold: 'Poppins-Bold',
+      extraBold: 'Poppins-ExtraBold',
+    },
     sizes: {
       tiny: 12,
       small: 14,
-      body: 16,
+      regular: 16,
       h6: 18,
       h5: 22,
       h4: 24,
@@ -37,26 +47,43 @@ export default {
       h2: 36,
       h1: 48,
     },
-
-    weight: {
-      regular: 'Poppins-Regular',
-      medium: 'Poppins-Medium',
-      semibold: 'Poppins-SemiBold',
-      bold: 'Poppins-Bold',
-    },
   },
   spacing: {
-    quarck: 4,
-    nano: 8,
-    xs: 16,
-    sm: 24,
-    md: 32,
-    lg: 48,
+    tiny: 4,
+    small: 8,
+    base: 16,
+    md: 24,
+    lg: 32,
+    xlg: 48,
   },
   borders: {
     none: 0,
     sm: 4,
     md: 8,
     lg: 12,
+  },
+};
+
+export const DarkTheme: DefaultThemeProps = {
+  ...DefaultConfigs,
+  themeColors: {
+    primary: '',
+    primaryText: '',
+    secondaryText: '',
+    background: '',
+    secondaryBackground: '',
+    border: '',
+  },
+};
+
+export const LightTheme: DefaultThemeProps = {
+  ...DefaultConfigs,
+  themeColors: {
+    primary: '',
+    primaryText: '',
+    secondaryText: '',
+    background: '',
+    secondaryBackground: '',
+    border: '',
   },
 };
