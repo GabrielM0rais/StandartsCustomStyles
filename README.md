@@ -1,0 +1,1 @@
+I made this repository with the intention that, when it is necessary to use themes, this repository can be consulted for any doubts, or as a starting point for a new project. Therefore, I decided to make it public so that anyone else can also study it and even suggest improvements
